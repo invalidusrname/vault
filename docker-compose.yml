@@ -1,0 +1,15 @@
+version: '3'
+services:
+    vault:
+        image: vault:1.0.3
+        ports:
+            - "8200:8200"
+        networks:
+            - nomad-local
+        environment:
+          VAULT_DEV_ROOT_TOKEN_ID: "dev-token"
+          VAULT_ADDR: "http://127.0.0.1:8200"
+        volumes:
+            - .:/app
+networks:
+    nomad-local:
