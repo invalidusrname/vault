@@ -40,4 +40,4 @@ For changes to production instance of Vault:
 
     $ docker-compose up
     $ docker-compose exec vault /bin/sh
-    # export VAULT_TOKEN=dev-token; cd /app; ./script/provision.sh
+    # export VAULT_TOKEN=$VAULT_DEV_ROOT_TOKEN_ID; cd /app; ./script/provision.sh
