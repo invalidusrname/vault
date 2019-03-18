@@ -28,7 +28,7 @@ vault secrets list -detailed
 
 vault write auth/github/config organization=NomadHealth
 
-vault write auth/github/map/teams/dev value=dev_team
+vault write auth/github/map/teams/engineering value=dev_team
 vault write auth/github/map/teams/deploy value=deploy
 vault write auth/github/map/users/nomad-circleci value=ci
 
