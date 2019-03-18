@@ -11,7 +11,7 @@ security to guarantee authorization to this confidential data.
 
 ## Directory Structure
 
-    secret/environment/<ENV>/<FILENAME>.json
+    secret/<ENV>/<APP_NAME>.json
 
 Example:
 
