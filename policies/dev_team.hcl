@@ -23,17 +23,17 @@ path "secret/metadata/test/*" {
 }
 
 path "secret/data/staging/*" {
-  capabilities = ["read"]
+  capabilities = ["deny"]
 }
 
 path "secret/metadata/prod/*" {
-  capabilities = ["read", "create", "update", "delete"]
+  capabilities = ["deny"]
 }
 
 path "secret/data/prod/*" {
-  capabilities = ["read"]
+  capabilities = ["deny"]
 }
 
 path "secret/metadata/prod/*" {
-  capabilities = ["read", "create", "update", "delete"]
+  capabilities = ["deny"]
 }
