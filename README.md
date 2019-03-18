@@ -41,3 +41,26 @@ For changes to production instance of Vault:
     $ docker-compose up
     $ docker-compose exec vault /bin/sh
     # export VAULT_TOKEN=$VAULT_DEV_ROOT_TOKEN_ID; cd /app; ./script/provision.sh
+
+### Reading some stuff
+
+    # vault kv list secret/dev
+    # apk add jq
+    # vault kv get -format=json secret/dev/nomad_flask | jq ".data[]"
+
+### Logging in via github
+    # vault login -method=github token=$GITHUB_ACCESS_TOKEN
+    # export VAULT_TOKEN=PASTE_FROM_LAST_COMMAND
+
+### Accessing resources
+
+A few allowed ones:
+
+    # vault kv get /secret/dev/common
+    # vault kv list /secret/dev
+    # vault kv get -format=json secret/dev/common | jq ".data[]"
+
+A few ones that aren't allowed:
+
+    # vault kv get /secret/prod/common
+    # vault kv list /secret/prod
