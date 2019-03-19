@@ -11,5 +11,13 @@ services:
           VAULT_ADDR: "http://127.0.0.1:8200"
         volumes:
             - .:/app
+    db:
+        image: postgres:11.2
+        ports:
+            - "5432:5432"
+        networks:
+            - nomad-local
+        environment:
+            POSTGRES_PASSWORD: "PASSWORDO"
 networks:
     nomad-local:
