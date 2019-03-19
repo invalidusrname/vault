@@ -1,7 +1,7 @@
 # Vault
 
-[Getting Started](https://learn.hashicorp.com/vault/#getting-started)
-[Docs](https://www.vaultproject.io/docs)
+* [Getting Started](https://learn.hashicorp.com/vault/#getting-started)
+* [Docs](https://www.vaultproject.io/docs)
 
 ## Setting up locally
 
