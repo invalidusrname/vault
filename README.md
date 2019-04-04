@@ -42,4 +42,4 @@ For changes to production instance of Vault:
     # vault kv list secret/dev
     # apk add jq
     # vault kv get -format=json secret/dev/my_app | jq ".data[]"
-
+ 
