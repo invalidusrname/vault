@@ -13,7 +13,7 @@ Builds vault and seeds it with some policies and secrets
 
 ### Logging in via github
 
-Allows logging in via github (restricted to nomadhealth/enginnering team)
+Allows logging in via github
 
     # vault login -method=github token=$GITHUB_ACCESS_TOKEN
     # export VAULT_TOKEN=PASTE_FROM_LAST_COMMAND
@@ -31,7 +31,7 @@ A few ones that aren't allowed:
     # vault kv get /secret/prod/common
     # vault kv list /secret/prod
     
-    # vault kv get -format=json secret/dev/nomad_flask | jq ".data[]"
+    # vault kv get -format=json secret/dev/my_app | jq ".data[]"
 
 ### Demo writing to a key-value store (V2)
 

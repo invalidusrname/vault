@@ -5,7 +5,7 @@ services:
         ports:
             - "8200:8200"
         networks:
-            - nomad-local
+            - somecompany-local
         environment:
           VAULT_DEV_ROOT_TOKEN_ID: "dev-token"
           VAULT_ADDR: "http://127.0.0.1:8200"
@@ -16,7 +16,7 @@ services:
         ports:
             - "5432:5432"
         networks:
-            - nomad-local
+            - somecompany-local
         environment:
             POSTGRES_PASSWORD: "PASSWORDO"
 networks:

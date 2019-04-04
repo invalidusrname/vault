@@ -6,8 +6,8 @@ import sys
 
 env    = os.environ.get('ENCLAVE', 'test')
 token  = os.environ['GITHUB_ACCESS_TOKEN']
-vault_url  = os.environ.get('VAULT_URL', 'http://vault.nomadhealth.com')
-path   = "secret/environment/" + env + "/nomad_flask"
+vault_url  = os.environ.get('VAULT_URL', 'http://localhost:8200')
+path   = "secret/environment/" + env + "/my_app"
 
 client = hvac.Client(url=vault_url)
 client.auth_github(token)
