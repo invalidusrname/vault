@@ -1,7 +1,7 @@
 # Vault README
 
-This demo repository serves as the single source of truth for the storage of secrets.
-Data items such as database passwords, api keys, etc are all stored in 
+This demo repository shows how to use single source of truth for the storage of secrets 
+using Vault. Data items such as database passwords, api keys, etc are all stored in 
 configuration management here for auditing and collaborative purposes.
 
 ## Directory Structure
